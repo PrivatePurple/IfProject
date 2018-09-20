@@ -2,9 +2,7 @@ package Controller;
 
 //Import Section
 import Model.Guardian;
-
 import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class ifController
@@ -21,8 +19,14 @@ public class ifController
 	 */
 	public void start()
 	{
-		Scanner inputGuardian = new Scanner(System.in);
 		String userInput = JOptionPane.showInputDialog(null, "What should it's name be?");
 		userGuardian.setName(userInput);
+		
+		userInput = JOptionPane.showInputDialog(null, "How many Legs should it have?");
+		userGuardian.setLegCount(Integer.parseInt(userInput));
+		JOptionPane.showMessageDialog(null, "Your monster has "+ userGuardian.getLegCount()+" legs.");
+		
+		
 	}
+	
 }

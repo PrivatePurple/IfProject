@@ -47,4 +47,58 @@ public class Guardian
 		this.isCharging = isCharging;
 		
 	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getLegCount()
+	{
+		return legCount;
+	}
+	
+	public double getHP()
+	{
+		return HP;
+	}
+	
+	public boolean getIsActive()
+	{
+		return isActive;
+	}
+	
+	public boolean getIsCharging()
+	{
+		return isCharging;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setLegCount(int legCount)
+	{
+		this.legCount = legCount;
+	}
+	
+	public void setHP(int HP)
+	{
+		this.HP  = HP;
+	}
+	
+	public void setIsActive(boolean isActive)
+	{
+		this.isActive = isActive;
+	}
+	
+	public void setIsCharging(boolean isCharging)
+	{
+		this.isCharging = isCharging;
+	}
+
+	
+	
+	
 }
