@@ -45,6 +45,7 @@ public class Guardian
 		this.HP = HP;
 		this.isActive = isActive;
 		this.isCharging = isCharging;
+		//ADD EYES!
 		
 	}
 	
