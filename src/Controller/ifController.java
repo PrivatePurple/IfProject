@@ -13,12 +13,11 @@ public class ifController
 	{
 		userGuardian = new Guardian();
 	}
-	
-	/**
-	 * this is where the program starts calling methods to run the program.
-	 */
+
 	public void start()
 	{
+	
+		
 		String userInput = JOptionPane.showInputDialog(null, "What should it's name be?");
 		userGuardian.setName(userInput);
 		
@@ -53,6 +52,30 @@ public class ifController
 				{
 					JOptionPane.showMessageDialog(null,"Once your Guardian locks on to an enemy, your Guardian fires a quick volley of shots, making sure that nothing is left standing.");
 				}
+		woomy();
+		
 	}
 	
+	public void woomy()
+	{
+		//define a variable before the lööp
+		boolean isFinished = false;
+		int someCount= 0;
+		while (!isFinished)
+		{
+		String response = JOptionPane.showInputDialog(null, "Pop quiz: What did you name your Guardian?");
+		while(!response.equals(userGuardian.getName()))
+		{
+			JOptionPane.showMessageDialog(null, "WRONG! Try again!");
+			
+			if (someCount > 10)
+			{
+			isFinished = true;
+			}	
+		}
+	}
+
+
+
+
 }
