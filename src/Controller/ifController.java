@@ -54,14 +54,16 @@ public class ifController
 				}
 		woomy();
 		
+		loops();
+		
 	}
 	
 	public void woomy()
+	
 	{
 		//define a variable before the lööp
 		boolean isFinished = false;
 		int someCount= 0;
-		{
 			String response = JOptionPane.showInputDialog(null, "Pop quiz: What did you name your Guardian?");
 			while(!response.equals(userGuardian.getName()))
 			{
@@ -71,11 +73,25 @@ public class ifController
 			if (someCount > 10)
 			{
 			isFinished = true;
-			}	
+			}
+	}
+	
+	private void loops()
+	{
+		JOptionPane.showInputDialog(null, "Bröther, do you want the lööps?");
+		
+		boolean wantsLoops = false;
+		int promptCount = 3;
+		
+		while(!wantsLoops)
+		{
+			JOptionPane.showMessageDialog(null, "Silly bröther, you know you want the lööps.");
 			
+			if (promptCount >= 3)
+			{
+				wantsLoops = true;
+			}
 		}
-		
-		
 	}
 
 
