@@ -61,7 +61,6 @@ public class ifController
 	public void woomy()
 	
 	{
-		//define a variable before the lööp
 		boolean isFinished = false;
 		int someCount= 0;
 			String response = JOptionPane.showInputDialog(null, "Pop quiz: What did you name your Guardian?");
@@ -78,15 +77,21 @@ public class ifController
 	
 	private void loops()
 	{
-		JOptionPane.showInputDialog(null, "Bröther, do you want the lööps?");
+		String loops = JOptionPane.showInputDialog(null, "Bröther, do you want the lööps?");
 		
 		boolean wantsLoops = false;
 		int promptCount = 3;
 		
 		while(!wantsLoops)
 		{
-			JOptionPane.showMessageDialog(null, "Silly bröther, you know you want the lööps.");
+			if(loops.toLowerCase().equals("yes") || loops.toLowerCase().equals("true"))
+			{
+			JOptionPane.showMessageDialog(null, "Good bröther, enjoy your lööps.");
+			}
 			
+			else if(loops.toLowerCase().equals("no") || loops.toLowerCase().equals("false"))
+			JOptionPane.showMessageDialog(null, "Silly bröther, you know you want the lööps.");
+		
 			if (promptCount >= 3)
 			{
 				wantsLoops = true;
