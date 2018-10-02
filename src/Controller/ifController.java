@@ -16,7 +16,7 @@ public class ifController
 
 	public void start()
 	{
-		
+		JOptionPane.showMessageDialog(null, "Time to make a new Guardian!");
 		
 		String userInput = JOptionPane.showInputDialog(null, "What should it's name be?");
 		userGuardian.setName(userInput);
@@ -67,8 +67,8 @@ public class ifController
 			while(!response.equals(userGuardian.getName()))
 			{
 				JOptionPane.showMessageDialog(null, "WRONG! Try again!");
+				someCount++;
 			}
-			
 			if (someCount > 10)
 			{
 			isFinished = true;
