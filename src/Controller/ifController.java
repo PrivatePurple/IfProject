@@ -107,5 +107,31 @@ public class ifController
 		
 		ArrayList<Guardian> myGuardians = new ArrayList<Guardian>();
 		
+		Guardian userGuardian = new Guardian();
+		
+		
+		myGuardians.add(userGuardian);
+		
+		//Standard forward loop
+		for(int index = 0; index < myGuardians.size();index += 1)
+		{
+			
+		}
+		
+		//Standard backward loop
+		for (int index = myGuardians.size()  - 1; index >=  0; index -=1) 
+		{
+			
+		}
+		
+		for (Guardian current : myGuardians)
+		{
+			JOptionPane.showMessageDialog(null, "The Guardian is named: " + current.getName());
+		}
+	}
+	
+	private void askUser()
+	{
+		
 	}
 }
