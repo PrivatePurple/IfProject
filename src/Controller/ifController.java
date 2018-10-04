@@ -4,6 +4,7 @@ package Controller;
 import Model.Guardian;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 public class ifController
 {
@@ -99,4 +100,12 @@ public class ifController
 		}
 	}
 
+	public void lotsOfRun()
+	{
+		//local variables are only visible in the method they are defined in!
+		//they only have SCOPE to that method
+		
+		ArrayList<Guardian> myGuardians = new ArrayList<Guardian>();
+		
+	}
 }
