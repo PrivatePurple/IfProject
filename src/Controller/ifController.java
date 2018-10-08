@@ -130,7 +130,8 @@ public class ifController
 		}
 	}
 	
-	private void askUser()
+	//Learn more about arrays on own time
+	
 	{
 		
 	}
